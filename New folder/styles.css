@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0b0e1a;
+  color: #e0e6f0;
+  font-family: "Barlow", sans-serif;
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-image:
+    radial-gradient(
+      ellipse at 80% 10%,
+      rgba(180, 30, 30, 0.12) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 10% 90%,
+      rgba(30, 50, 120, 0.15) 0%,
+      transparent 50%
+    );
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #e8283c;
+  margin-top: 10px;
+  margin-bottom: 32px;
+  border-radius: 2px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+  backdrop-filter: blur(6px);
+}
+
+input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e0e6f0;
+  padding: 13px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: "Barlow", sans-serif;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #e8283c;
+  background-color: rgba(232, 40, 60, 0.05);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+button {
+  background: linear-gradient(135deg, #e8283c, #c0182c);
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition:
+    opacity 0.2s,
+    transform 0.1s;
+}
+
+button:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#loading-text {
+  color: rgba(255, 255, 255, 0.35);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+  display: none;
+  letter-spacing: 1px;
+}
+
+#movie-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#movie-list li {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 3px solid #e8283c;
+  padding: 16px 20px;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  transition: background 0.2s;
+}
+
+#movie-list li:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+#movie-list li strong {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 2px;
+}
