@@ -1,11 +1,12 @@
 const titles = ["Core", "Crucial", "Fundamentals"];
+import { CORE_CONCEPTS } from "./data.js";
 function randomInt() {
   return Math.floor(Math.random() * titles.length);
 }
 function CoreConcept(props) {
   return (
     <li>
-      <img src="" alt="" />
+      <img src={props.img} alt="" />
 
       <h3>{props.title}</h3>
       <p>{props.description}</p>
@@ -35,12 +36,25 @@ function App() {
           <section>
             <ul>
               <CoreConcept
-                title="Components"
-                description="Txt for Components"
+                img={CORE_CONCEPTS[0].image}
+                title={CORE_CONCEPTS[0].title}
+                description={CORE_CONCEPTS[0].description}
               />
-              <CoreConcept title="State" description="Txt for State" />
-              <CoreConcept title="JSX" description="Txt for JSX" />
-              <CoreConcept title="Props" description="Txt for Props" />
+              <CoreConcept
+                img={CORE_CONCEPTS[1].image}
+                title={CORE_CONCEPTS[1].title}
+                description={CORE_CONCEPTS[1].description}
+              />
+              <CoreConcept
+                img={CORE_CONCEPTS[2].image}
+                title={CORE_CONCEPTS[2].title}
+                description={CORE_CONCEPTS[2].description}
+              />
+              <CoreConcept
+                img={CORE_CONCEPTS[3].image}
+                title={CORE_CONCEPTS[3].title}
+                description={CORE_CONCEPTS[3].description}
+              />
             </ul>
           </section>
         </section>
