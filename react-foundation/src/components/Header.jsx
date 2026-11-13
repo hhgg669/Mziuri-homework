@@ -6,11 +6,11 @@ function getRandomInt() {
   return Math.floor(Math.random() * titles.length);
 }
 
-export default function Header() {
+export default function Header(props) {
   return (
     <header>
       <img src={reactCoreConceptsImg} alt="Stylized atom" />
-      <h1>React Essentials</h1>
+      <h1>{props.header}</h1>
       <p>
         {titles[getRandomInt()]} React concepts you will need for almost any app
         you are going to build!

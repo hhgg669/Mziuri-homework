@@ -6,7 +6,8 @@ import TabButton from "./components/TabButton";
 function App() {
   return (
     <div>
-      <Header />
+      <Header header={"Kote kai"} />
+      <Header header={"Gabela"} />
       <main>
         <section id="core-concepts">
           <h2>Core Concepts</h2>
@@ -36,10 +37,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton />
-            <TabButton />
-            <TabButton />
-            <TabButton />
+            <TabButton btnname={CORE_CONCEPTS[0].title} />
+            <TabButton btnname={CORE_CONCEPTS[1].title} />
+            <TabButton btnname={CORE_CONCEPTS[2].title} />
+            <TabButton btnname={CORE_CONCEPTS[3].title} />
           </menu>
         </section>
       </main>
