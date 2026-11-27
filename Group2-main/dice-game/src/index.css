@@ -1,0 +1,37 @@
+.dice-app {
+  text-align: center;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+}
+
+.title {
+  color: #333;
+  font-size: 32px;
+}
+
+.dice {
+  margin: 30px 0;
+}
+
+.dice h2 {
+  font-size: 100px;
+  margin: 10px;
+}
+
+.dice p {
+  font-size: 20px;
+  color: #555;
+}
+
+.roll-button {
+  padding: 12px 30px;
+  background-color: #327a65;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
